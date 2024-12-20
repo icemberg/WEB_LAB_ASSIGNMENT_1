@@ -1,0 +1,109 @@
+body {
+     font-family: 'Nunito Sans', sans-serif;
+     background-color: #f8f9fa;
+     color: #212529;
+}
+
+header {
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-card {
+     background: white;
+     border-radius: 10px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+     text-align: center;
+     transition: transform 0.3s;
+}
+
+.achievement-card:hover {
+     transform: scale(1.05);
+}
+
+.timeline {
+     position: relative;
+     margin: 30px 0;
+}
+
+.timeline-item {
+     background: white;
+     border-radius: 10px;
+     padding: 20px;
+     margin: 15px 0;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item:nth-child(odd) {
+     margin-left: 10%;
+}
+
+.timeline-item:nth-child(even) {
+     margin-right: 10%;
+}
+
+.typewriter {
+     display: inline-block;
+     overflow: hidden;
+     border-right: 2px solid #000;
+     white-space: nowrap;
+     animation: typing 3s steps(30, end), blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+     from {
+          width: 0;
+     }
+
+     to {
+          width: 100%;
+     }
+}
+
+@keyframes blink {
+     from, to {
+          border-color: transparent;
+     }
+
+     50% {
+          border-color: rgb(246, 2, 2);
+     }
+}
+
+.highlight {
+     color: #007bff;
+     font-weight: bold;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     font-family: 'Nunito Sans', sans-serif;
+     background-color: #f8f9fa;
+     color: #212529;
+}
+
+header {
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+     border-bottom: 2px solid #007bff;
+     padding-bottom: 5px;
+     margin-bottom: 15px;
+}
+
+.timeline {
+     position: relative;
+     padding: 10px 0;
+}
+
+.timeline-item {
+     margin-bottom: 20px;
+     padding: 15px;
+     background: white;
+     border-radius: 5px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

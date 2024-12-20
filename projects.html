@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Projects</title>
+
+          <!-- Bootstrap CSS -->
+          <link
+               href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+               rel="stylesheet">
+
+          <!-- AOS CSS for animations -->
+          <link rel="stylesheet"
+               href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+          <style>
+        /* Body and general layout */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #28a745;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        /* Main section */
+        main {
+            padding: 50px 0;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+            background-color: #ffffff;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Card title and text styling */
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #007bff;
+            text-align: center;
+        }
+
+        .card-text {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Images */
+        .card-img-top {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            object-fit: cover;
+            height: 200px;
+        }
+
+        /* Card body spacing */
+        .card-body {
+            padding: 20px;
+        }
+
+        /* Responsive card layout */
+        @media (max-width: 768px) {
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+
+        /* Hover effects for project links */
+        .card-body:hover .card-title {
+            color: #28a745;
+            cursor: pointer;
+        }
+
+        /* Bootstrap adjustments */
+        .container {
+            max-width: 1200px;
+        }
+
+        /* AOS (Animate on Scroll) customization */
+        [data-aos="fade-up"] {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        [data-aos="fade-up"].aos-animate {
+            opacity: 1;
+        }
+    </style>
+     </head>
+     <body>
+
+          <!-- Header Section -->
+          <header class="bg-success text-white text-center py-3">
+               <h1>My Projects</h1>
+          </header>
+
+          <!-- Main Content Section -->
+          <main class="container py-5">
+               <div class="row">
+                    <div class="col-md-4" data-aos="fade-up">
+                         <div class="card">
+                              <img src="project1.png" class="card-img-top"
+                                   alt="Project 1">
+                              <div class="card-body">
+                                   <h5 class="card-title">AI-Powered Traffic
+                                        Prediction System</h5>
+                                   <p class="card-text">
+                                        Developed an AI-powered traffic
+                                        prediction system designed to predict
+                                        real-time traffic conditions using
+                                        machine learning algorithms.
+                                        The system ingests real-time GPS and
+                                        sensor data from vehicles, analyzes the
+                                        data to detect patterns, and predicts
+                                        traffic congestion in various city
+                                        zones.
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up"
+                         data-aos-delay="200">
+                         <div class="card">
+                              <img src="project2.png" class="card-img-top"
+                                   alt="Project 2">
+                              <div class="card-body">
+                                   <h5 class="card-title">E-Commerce Website
+                                        with AI Recommendation Engine</h5>
+                                   <p class="card-text">
+                                        Developed an e-commerce platform with an
+                                        integrated AI-powered recommendation
+                                        engine using Python, Django, and
+                                        TensorFlow.
+                                        The recommendation system personalizes
+                                        product suggestions, boosting user
+                                        engagement and sales.
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up"
+                         data-aos-delay="400">
+                         <div class="card">
+                              <img src="project3.png" class="card-img-top"
+                                   alt="Project 3">
+                              <div class="card-body">
+                                   <h5 class="card-title">Real-Time Chat
+                                        Application</h5>
+                                   <p class="card-text">
+                                        Created a real-time chat application
+                                        using WebSockets, Node.js, and MongoDB.
+                                        The app allows users to send and receive
+                                        messages instantly
+                                        with features like private messaging and
+                                        group chats. Built using React.js for a
+                                        smooth interactive experience.
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </main>
+
+          <!-- AOS JavaScript -->
+          <script
+               src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+          <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+
+          <!-- Bootstrap JS -->
+          <script
+               src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+     </body>
+</html>
