@@ -10,6 +10,8 @@
           <link rel="stylesheet" href="style.css">
           <link rel="stylesheet"
                href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+          <!-- Font Awesome for icons -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
      </head>
      <body>
@@ -18,6 +20,9 @@
                     <h2 class="typewriter" data-aos="fade-up">
                          Welcome to <span class="highlight">My Portfolio</span>
                     </h2>
+                    <p class="lead mt-3" data-aos="fade-up" data-aos-delay="200">
+                         Turning ideas into reality with code and creativity.
+                    </p>
                </div>
           </header>
           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -46,57 +51,129 @@
                     </div>
                </div>
           </nav>
-          <main class="container py-5">
-               <div class="text-center">
+          <main class="container py-5" id="home">
+               <div class="text-center" data-aos="fade-up">
                     <img src="your-photo.jpg" class="rounded-circle"
                          alt="Your Photo" style="width: 150px;">
                     <h2 class="mt-3">Abhiraam S</h2>
-                    <p>Software Developer | AI Enthusiast | Problem Solver</p>
+                    <p>Software Engineer — Java Full-Stack Developer — Python &amp; ML Specialist</p>
                </div>
-               <section class="mt-5">
+               <section id="about" class="mt-5" data-aos="fade-up">
                     <h3>About Me</h3>
-                    <p>About Me
-                         Hi there! 👋 I’m Abhiraam S, a passionate software
-                         developer and AI enthusiast with a knack for
-                         problem-solving and innovation. Currently pursuing my
-                         B.E at Bangalore Institute of Technology, I
-                         specialize in creating intelligent solutions that
-                         bridge technology and real-world challenges.
-
-                         I have a strong background in and web development,
-                         coupled with hands-on experience in building scalable
-                         applications and AI models.
-
-                         When I’m not coding, you’ll find me exploring [your
-                         hobbies, e.g., open-source projects, new technologies,
-                         or playing chess]. My goal is to continuously learn,
+                    <p>Software Engineer with hands-on experience in Java,
+                         Python, Spring Boot microservices, and full-stack
+                         development. Proficient in REST APIs, MySQL, Redis
+                         caching, and React. Strong in Data Structures &amp;
+                         Algorithms, OOP, Testing (JUnit, Mockito), and Machine
+                         Learning. Experienced with Docker, CI/CD, AWS/GCP, and
+                         Agile development. Proven ability to deliver
+                         production-ready solutions.</p>
+               </section>
                          grow, and contribute to impactful projects that make a
                          difference.
 
                          Feel free to connect with me for collaborations or just
                          a friendly tech chat! 😊</p>
                </section>
-               <section class="mt-5">
+
+               <section id="skills" class="mt-5" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Skills & Technologies</h3>
+                    <div class="row text-center">
+                        <div class="col-6 col-sm-4 col-md-2 mb-3">
+                            <i class="fab fa-python fa-2x"></i>
+                            <p>Python</p>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-2 mb-3">
+                            <i class="fab fa-js fa-2x"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-2 mb-3">
+                            <i class="fab fa-html5 fa-2x"></i>
+                            <p>HTML</p>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-2 mb-3">
+                            <i class="fab fa-css3-alt fa-2x"></i>
+                            <p>CSS</p>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-2 mb-3">
+                            <i class="fab fa-react fa-2x"></i>
+                            <p>React</p>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-2 mb-3">
+                            <i class="fab fa-node fa-2x"></i>
+                            <p>Node.js</p>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-2 mb-3">
+                            <i class="fab fa-java fa-2x"></i>
+                            <p>Java</p>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-2 mb-3">
+                            <i class="fab fa-aws fa-2x"></i>
+                            <p>AWS</p>
+                        </div>
+                    </div>
+               </section>
+
+               <section id="featured" class="mt-5" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Featured Projects</h3>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card project-card">
+                                <img src="project1.png" class="card-img-top" alt="BrainBlast Quiz App">
+                                <div class="card-body">
+                                    <h5 class="card-title">BrainBlast – Full-Stack Quiz App</h5>
+                                    <p class="card-text">Java/Spring Boot + React quiz platform with JWT/OAuth2 security.</p>
+                                    <a href="projects.html#brainblast" class="btn btn-sm btn-custom">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card project-card">
+                                <img src="project2.png" class="card-img-top" alt="Map Matching Algorithm">
+                                <div class="card-body">
+                                    <h5 class="card-title">Map-Matching Algorithm</h5>
+                                    <p class="card-text">ML pipeline in Python with HMM & Random Forest for geospatial data.</p>
+                                    <a href="projects.html#mapmatching" class="btn btn-sm btn-custom">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card project-card">
+                                <img src="project3.png" class="card-img-top" alt="RAG Pipeline">
+                                <div class="card-body">
+                                    <h5 class="card-title">Web Scraping &amp; RAG Pipeline</h5>
+                                    <p class="card-text">Automated Q&A dataset generation & semantic search.</p>
+                                    <a href="projects.html#ragscraper" class="btn btn-sm btn-custom">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </section>
+
+               <section id="resume" class="mt-5" data-aos="fade-up" data-aos-delay="600">
                     <h3>Resume</h3>
                     <p>Organize your skills into categories for clarity: <br>
 
-                         <b>Programming Languages</b><br>
-                         Python, JavaScript, C++, Java <br>
-                         <b>Web Development</b><br>
-                         HTML, CSS, Bootstrap, React, Node.js <br>
-                         <b>AI & Machine Learning</b> <br>
-                         TensorFlow, Keras, Scikit-learn, OpenCV <br>
-                         <b>Tools & Platforms</b><br>
-                         Git, Docker, Jenkins, Postman <br>
-                         <b>Soft Skills</b><br>
-                         Problem-solving, Communication, Teamwork,
-                         Leadership</p>
+                         <b>Programming</b><br>
+                         Java, Python, C++, JavaScript, SQL, HTML5, CSS3 <br>
+                         <b>Frameworks &amp; Tools</b><br>
+                         Spring Boot, React, Node.js, Django, TensorFlow, scikit-learn <br>
+                         <b>Databases &amp; DevOps</b><br>
+                         MySQL, Redis, AWS, Docker, Kubernetes, CI/CD <br>
+                         <b>Others</b><br>
+                         DSA, OOP, Machine Learning, Agile/Scrum</p>
                     <a href="resume.pdf" class="btn btn-primary"
                          download>Download Resume</a>
                </section>
+
+               <div class="text-center social-icons-home mt-5" data-aos="fade-up" data-aos-delay="800">
+                    <a href="https://www.linkedin.com/in/abhiraam-s-84388125b" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/icemberg" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="mailto:abhiraams2004@gmail.com"><i class="fas fa-envelope"></i></a>
+               </div>
           </main>
           <footer class="bg-dark text-white text-center py-3">
-               <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+               <p>&copy; 2026 Abhiraam S. All rights reserved.</p>
           </footer>
           <script
                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

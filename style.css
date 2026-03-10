@@ -50,6 +50,97 @@ header {
      animation: typing 3s steps(30, end), blink 0.5s step-end infinite;
 }
 
+/* New enhanced styles */
+header {
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: white;
+    padding: 60px 0;
+}
+
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.navbar .nav-link.active {
+    font-weight: bold;
+    color: #00d4ff !important;
+}
+
+.btn-custom {
+    background: #00d4ff;
+    color: white;
+    transition: background 0.3s;
+}
+
+.btn-custom:hover {
+    background: #007bff;
+}
+
+.project-card .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* timeline enhancements with center line */
+.timeline {
+    position: relative;
+    margin: 30px 0;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    background: #007bff;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    width: 45%;
+    margin-bottom: 40px;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 55%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -8px;
+    width: 16px;
+    height: 16px;
+    background: #007bff;
+    border-radius: 50%;
+}
+
+/* social icons on index page */
+.social-icons-home a {
+    color: #212529;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons-home a:hover {
+    color: #00d4ff;
+    transform: scale(1.2);
+}
+
 @keyframes typing {
      from {
           width: 0;

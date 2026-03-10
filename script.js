@@ -44,3 +44,12 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+// Highlight nav item based on current page path (for separate html files)
+const path = window.location.pathname.split('/').pop();
+navLinks.forEach(link => {
+  const href = link.getAttribute('href');
+  if (href === path) {
+    link.classList.add('active');
+  }
+});
